@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:5px 10px;
+    background-color: #0f0f0f;
+    color: white;
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    width:216px;
+    padding:7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar h2{
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+.option{
+    display:flex;
+    flex-direction: row;
+    padding: 0px 12px;
+    height:40px;
+    gap: 30px;
+    
+    font-size: 14px;
+}
+.line{
+    height: 2px;
+    background-color: #333333;
+    margin-bottom: 20px;
+}
+#hamcheck{
+    display: none;
+}
+.menuicon{
+
+    margin:4px;
+    padding:15px;
+    border-radius: 50%;
+}
+.menuicon:hover{
+    background-color:#333333;
+    
+    
+}
+.option1{
+    display:flex;
+    flex-direction: row;
+    padding: 0px 12px;
+    height:40px;
+    gap: 30px;
+    
+    font-size: 14px;
+}
+.headbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.center{
+    width:40%;
+    display:flex;
+    align-items: center;
+    gap:15px;
+}
+.search{
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+    background-color: #121212;
+    align-items: center;
+    padding: 0px 0px 0px 18px;
+    border: 0.5px solid #303030;
+    border-radius: 25px;
+}
+.search input{
+    background-color: #121212;
+    font-size: 16px;
+    width:90%;
+    outline: none;
+    border:none;
+    color:white;
+    
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-right: 15px;
+}
+.mic{
+    background-color: #222222;
+    border-radius: 50%;
+    padding:10px;
+}
+.searchicon{
+    background-color: #222222;
+    border-radius: 0px 25px 25px 0px;
+    padding: 7px 18px;
+}
+.search input::placeholder{
+    font-size: 16px;
+    color:gray;
+}
+.youtube-videos{
+    margin-top: 52px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display:grid;
+    grid-template-columns: repeat(3, 400px);
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+.main{
+    display:flex;
+    flex-direction: row;
+}
+.thumbnail img{
+    width:400px;
+    height: 225px;
+    border-radius: 10px;
+}
+.caption{
+    display:flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+.videos{
+    height: 310px;
+    width: 400px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.channlname h5{
+    font-weight:200;
+    color:#aaaaaa;
+}
+.caption1 img{
+    border-radius: 50%;
+    height: 36px;
+    width:36px;
+}
+.title h3{
+    font-size: 16px;
+}

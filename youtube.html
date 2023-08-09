@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="youtube.css" />
+    <script
+      src="https://kit.fontawesome.com/85a8b20039.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="headbar">
+      <div class="left">
+        <div class="menu" id="menu">
+          <svg
+            class="menuicon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M3 18v-2h18v2H3Zm0-5v-2h18v2H3Zm0-5V6h18v2H3Z"
+            />
+          </svg>
+        </div>
+        <div class="logo">
+          <img src="youtube-logo.png" width="120px" height="40px" />
+        </div>
+      </div>
+      <div class="center">
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="searchicon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16Zm0-2q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z"
+            />
+          </svg>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="mic"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M12 14q-1.25 0-2.125-.875T9 11V5q0-1.25.875-2.125T12 2q1.25 0 2.125.875T15 5v6q0 1.25-.875 2.125T12 14Zm-1 7v-3.075q-2.6-.35-4.3-2.325T5 11h2q0 2.075 1.463 3.538T12 16q2.075 0 3.538-1.463T17 11h2q0 2.625-1.7 4.6T13 17.925V21h-2Z"
+          />
+        </svg>
+      </div>
+      <div class="right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 32 32"
+        >
+          <path fill="currentColor" d="M18 15h-4v-4h-2v4H8v2h4v4h2v-4h4v-2z" />
+          <path
+            fill="currentColor"
+            d="M21 26H4a2.002 2.002 0 0 1-2-2V8a2.002 2.002 0 0 1 2-2h17a2.002 2.002 0 0 1 2 2v4.057l5.419-3.87A1 1 0 0 1 30 9v14a1 1 0 0 1-1.581.814L23 19.944V24a2.002 2.002 0 0 1-2 2ZM4 8v16.001L21 24v-6a1 1 0 0 1 1.581-.814L28 21.056V10.944l-5.419 3.87A1 1 0 0 1 21 14V8Z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <g fill="none">
+            <path
+              stroke="currentColor"
+              stroke-width="2"
+              d="M21 12a8.958 8.958 0 0 1-1.526 5.016A8.991 8.991 0 0 1 12 21a8.991 8.991 0 0 1-7.474-3.984A9 9 0 1 1 21 12Z"
+            />
+            <path
+              fill="currentColor"
+              d="M13 9a1 1 0 0 1-1 1v2a3 3 0 0 0 3-3h-2Zm-1 1a1 1 0 0 1-1-1H9a3 3 0 0 0 3 3v-2Zm-1-1a1 1 0 0 1 1-1V6a3 3 0 0 0-3 3h2Zm1-1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3v2Zm-6.834 9.856l-.959-.285l-.155.523l.355.413l.759-.65Zm13.668 0l.76.651l.354-.413l-.155-.523l-.959.285ZM9 16h6v-2H9v2Zm0-2a5.002 5.002 0 0 0-4.793 3.571l1.917.57A3.002 3.002 0 0 1 9 16v-2Zm3 6a7.98 7.98 0 0 1-6.075-2.795l-1.518 1.302A9.98 9.98 0 0 0 12 22v-2Zm3-4c1.357 0 2.506.902 2.876 2.142l1.916-.571A5.002 5.002 0 0 0 15 14v2Zm3.075 1.205A7.98 7.98 0 0 1 12 20v2a9.98 9.98 0 0 0 7.593-3.493l-1.518-1.302Z"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <input type="checkbox" id="hamcheck" />
+    <div class="main">
+      <div class="sidebar" id="sidebar">
+        <div class="homeopt option">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path fill="white" d="M10 20v-6h4v6h5v-8h3L12 3L2 12h3v8h5z" />
+          </svg>
+          <h3>Home</h3>
+        </div>
+        <div class="shortsopt option">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 16 16"
+          >
+            <g fill="white">
+              <path
+                d="M6 3a3 3 0 1 1-6 0a3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0a2 2 0 0 0-4 0z"
+              />
+              <path
+                d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"
+              />
+              <path
+                d="M9 6a3 3 0 1 0 0-6a3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0a2 2 0 0 1-4 0z"
+              />
+            </g>
+          </svg>
+          <h3>Shorts</h3>
+        </div>
+        <div class="subsopt option">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M4 22q-.825 0-1.413-.588T2 20V10q0-.825.588-1.413T4 8h16q.825 0 1.413.588T22 10v10q0 .825-.588 1.413T20 22H4Zm0-2h16V10H4v10Zm6-1l6-4l-6-4v8ZM4 7V5h16v2H4Zm3-3V2h10v2H7ZM4 20V10v10Z"
+            />
+          </svg>
+          <h3>Subscriptions</h3>
+        </div>
+        <div class="line" id="line1"></div>
+        <div class="libopt option">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M17.525 10.625q.35-.225.35-.625t-.35-.625L12.65 6.25q-.375-.25-.763-.038t-.387.663v6.25q0 .45.388.663t.762-.038l4.875-3.125ZM8 18q-.825 0-1.413-.588T6 16V4q0-.825.588-1.413T8 2h12q.825 0 1.413.588T22 4v12q0 .825-.588 1.413T20 18H8Zm0-2h12V4H8v12Zm-4 6q-.825 0-1.413-.588T2 20V7q0-.425.288-.713T3 6q.425 0 .713.288T4 7v13h13q.425 0 .713.288T18 21q0 .425-.288.713T17 22H4ZM8 4v12V4Z"
+            />
+          </svg>
+          <h3>Library</h3>
+        </div>
+        <div class="historyopt option">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M13.5 8H12v5l4.28 2.54l.72-1.21l-3.5-2.08V8M13 3a9 9 0 0 0-9 9H1l3.96 4.03L9 12H6a7 7 0 0 1 7-7a7 7 0 0 1 7 7a7 7 0 0 1-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.896 8.896 0 0 0 13 21a9 9 0 0 0 9-9a9 9 0 0 0-9-9"
+            />
+          </svg>
+          <h3>History</h3>
+        </div>
+        <div class="option1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="m9.5 16.5l7-4.5l-7-4.5v9ZM4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm0-2h16V6H4v12Zm0 0V6v12Z"
+            />
+          </svg>
+          <h3>Your videos</h3>
+        </div>
+        <div class="option1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10s10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8zm.5-13H11v6l5.2 3.2l.8-1.3l-4.5-2.7V7z"
+            />
+          </svg>
+          <h3>Watch Later</h3>
+        </div>
+        <div class="option1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              fill="white"
+              d="M885.9 533.7c16.8-22.2 26.1-49.4 26.1-77.7c0-44.9-25.1-87.4-65.5-111.1a67.67 67.67 0 0 0-34.3-9.3H572.4l6-122.9c1.4-29.7-9.1-57.9-29.5-79.4A106.62 106.62 0 0 0 471 99.9c-52 0-98 35-111.8 85.1l-85.9 311H144c-17.7 0-32 14.3-32 32v364c0 17.7 14.3 32 32 32h601.3c9.2 0 18.2-1.8 26.5-5.4c47.6-20.3 78.3-66.8 78.3-118.4c0-12.6-1.8-25-5.4-37c16.8-22.2 26.1-49.4 26.1-77.7c0-12.6-1.8-25-5.4-37c16.8-22.2 26.1-49.4 26.1-77.7c-.2-12.6-2-25.1-5.6-37.1zM184 852V568h81v284h-81zm636.4-353l-21.9 19l13.9 25.4a56.2 56.2 0 0 1 6.9 27.3c0 16.5-7.2 32.2-19.6 43l-21.9 19l13.9 25.4a56.2 56.2 0 0 1 6.9 27.3c0 16.5-7.2 32.2-19.6 43l-21.9 19l13.9 25.4a56.2 56.2 0 0 1 6.9 27.3c0 22.4-13.2 42.6-33.6 51.8H329V564.8l99.5-360.5a44.1 44.1 0 0 1 42.2-32.3c7.6 0 15.1 2.2 21.1 6.7c9.9 7.4 15.2 18.6 14.6 30.5l-9.6 198.4h314.4C829 418.5 840 436.9 840 456c0 16.5-7.2 32.1-19.6 43z"
+            />
+          </svg>
+          <h3>Liked videos</h3>
+        </div>
+        <div class="line" id="line2"></div>
+        <h2 id="sidehead">Explore</h2>
+        <div class="option1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 14 14"
+          >
+            <g
+              fill="none"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M6.15.53a.39.39 0 0 0-.4 0a.26.26 0 0 0-.06.34C6.92 3 7.18 5.9 5.5 7.5a5.52 5.52 0 0 1-1.5-2A3.89 3.89 0 0 0 2 9a4.7 4.7 0 0 0 5 4.5c3.22 0 4.89-2 5-4.5c.13-3-2-6.69-5.85-8.47Z"
+              />
+              <path d="M9.5 9a2 2 0 0 1-2 2" />
+            </g>
+          </svg>
+          <h3>Trending</h3>
+        </div>
+        <div class="option1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none">
+              <path
+                d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"
+              />
+              <path
+                fill="white"
+                d="M12 2a4 4 0 0 1 4 4h2.035a2 2 0 0 1 1.999 1.929l.428 12A2 2 0 0 1 18.464 22H5.536a2 2 0 0 1-1.998-2.071l.428-12A2 2 0 0 1 5.965 6H8a4 4 0 0 1 4-4ZM8 8H5.965l-.429 12h12.928l-.429-12H16v1a1 1 0 0 1-1.993.117L14 9V8h-4v1a1 1 0 0 1-1.993.117L8 9V8Zm4-4a2 2 0 0 0-1.995 1.85L10 6h4a2 2 0 0 0-2-2Z"
+              />
+            </g>
+          </svg>
+          <h3>Shopping</h3>
+        </div>
+        <div class="option1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 256 256"
+          >
+            <path
+              fill="white"
+              d="m209.72 58.25l-80-24A6 6 0 0 0 122 40v113.05A46 46 0 1 0 134 184V96.06l72.28 21.69A6 6 0 0 0 214 112V64a6 6 0 0 0-4.28-5.75ZM88 218a34 34 0 1 1 34-34a34 34 0 0 1-34 34Zm114-114.06l-68-20.4V48.06l68 20.4Z"
+            />
+          </svg>
+          <h3>Music</h3>
+        </div>
+        <div class="option1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="m20.84 2.18l-3.93.78l2.74 3.54l1.97-.4l-.78-3.92m-6.87 1.36L12 3.93l2.75 3.53l1.96-.39l-2.74-3.53m-4.9.96l-1.97.41l2.75 3.53l1.96-.39L9.07 4.5m-4.91 1l-.98.19a1.995 1.995 0 0 0-1.57 2.35L2 10l4.9-.97L4.16 5.5M20 12v8H4v-8h16m2-2H2v10a2 2 0 0 0 2 2h16c1.11 0 2-.89 2-2V10Z"
+            />
+          </svg>
+          <h3>Films</h3>
+        </div>
+        <div class="option1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M5.99 4.929a.75.75 0 0 1 0 1.06a8.5 8.5 0 0 0 0 12.021a.75.75 0 0 1-1.061 1.06c-3.905-3.905-3.905-10.236 0-14.141a.75.75 0 0 1 1.06 0Zm13.081 0c3.905 3.905 3.905 10.236 0 14.142a.75.75 0 0 1-1.06-1.06a8.5 8.5 0 0 0 0-12.022a.75.75 0 1 1 1.06-1.06ZM8.818 7.757a.75.75 0 0 1 0 1.06a4.5 4.5 0 0 0 0 6.365a.75.75 0 0 1-1.06 1.06a6 6 0 0 1 0-8.485a.75.75 0 0 1 1.06 0Zm7.425 0a6 6 0 0 1 0 8.485a.75.75 0 1 1-1.061-1.06a4.5 4.5 0 0 0 0-6.364a.75.75 0 0 1 1.06-1.06ZM12 10.5a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"
+            />
+          </svg>
+          <h3>Live</h3>
+        </div>
+      </div>
+      <div class="youtube-videos">
+        <div class="videos">
+          <div class="thumbnail">
+            <img src="loki2trailer.png" />
+          </div>
+          <div class="caption">
+            <div class="caption1">
+              <img src="marvellogo.jpg" />
+            </div>
+            <div class="caption2">
+              <div class="title">
+                <h3>
+                  Marvel Studios’ Loki Season 2 | Official Trailer | Disney+
+                </h3>
+              </div>
+              <div class="channlname">
+                <h5>Marvel</h5>
+                <h5>12M views • 5 days ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="thumbnail">
+            <img src="loki2trailer.png" />
+          </div>
+          <div class="caption">
+            <div class="caption1">
+              <img src="marvellogo.jpg" />
+            </div>
+            <div class="caption2">
+              <div class="title">
+                <h3>
+                  Marvel Studios’ Loki Season 2 | Official Trailer | Disney+
+                </h3>
+              </div>
+              <div class="channlname">
+                <h5>Marvel</h5>
+                <h5>12M views • 5 days ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="thumbnail">
+            <img src="loki2trailer.png" />
+          </div>
+          <div class="caption">
+            <div class="caption1">
+              <img src="marvellogo.jpg" />
+            </div>
+            <div class="caption2">
+              <div class="title">
+                <h3>
+                  Marvel Studios’ Loki Season 2 | Official Trailer | Disney+
+                </h3>
+              </div>
+              <div class="channlname">
+                <h5>Marvel</h5>
+                <h5>12M views • 5 days ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="thumbnail">
+            <img src="loki2trailer.png" />
+          </div>
+          <div class="caption">
+            <div class="caption1">
+              <img src="marvellogo.jpg" />
+            </div>
+            <div class="caption2">
+              <div class="title">
+                <h3>
+                  Marvel Studios’ Loki Season 2 | Official Trailer | Disney+
+                </h3>
+              </div>
+              <div class="channlname">
+                <h5>Marvel</h5>
+                <h5>12M views • 5 days ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="thumbnail">
+            <img src="loki2trailer.png" />
+          </div>
+          <div class="caption">
+            <div class="caption1">
+              <img src="marvellogo.jpg" />
+            </div>
+            <div class="caption2">
+              <div class="title">
+                <h3>
+                  Marvel Studios’ Loki Season 2 | Official Trailer | Disney+
+                </h3>
+              </div>
+              <div class="channlname">
+                <h5>Marvel</h5>
+                <h5>12M views • 5 days ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="videos">
+          <div class="thumbnail">
+            <img src="loki2trailer.png" />
+          </div>
+          <div class="caption">
+            <div class="caption1">
+              <img src="marvellogo.jpg" />
+            </div>
+            <div class="caption2">
+              <div class="title">
+                <h3>
+                  Marvel Studios’ Loki Season 2 | Official Trailer | Disney+
+                </h3>
+              </div>
+              <div class="channlname">
+                <h5>Marvel</h5>
+                <h5>12M views • 5 days ago</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="youtube.js"></script>
